@@ -20,11 +20,46 @@
 
 /////////////////////////////////////////////////////////////////////////////////
 //Returns the Largest
-const returnLargest = (first, second) => {
-  //Plain
-  //   return first > second ? first : second;
+// const returnLargest = (first, second) => {
+//   //Plain
+//   //   return first > second ? first : second;
 
-  //JS Methods
-  return Math.max(first, second);
-};
-console.log(returnLargest(4, 5));
+//   //JS Methods
+//   return Math.max(first, second);
+// };
+
+/////////////////////////////////////////////////////////////////////////////////
+//Return number of elements in an arary
+
+const arr = [
+  true,
+  true,
+  true,
+  true,
+  false,
+  false,
+  false,
+  false,
+  false,
+  false,
+  false,
+  false,
+  false,
+];
+
+var numOfTrues = 0;
+var numOfFalse = 0;
+
+arr.map((el) => {
+  el === true && numOfTrues++;
+  el === false && numOfFalse++;
+});
+// console.log(numOfFalse);
+
+//JS Methods
+
+const array = arr.reduce((prev, current) => {
+  prev[current] = (prev[current] || 0) + 1;
+  return prev;
+}, {});
+console.log(array);
