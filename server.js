@@ -31,35 +31,46 @@
 /////////////////////////////////////////////////////////////////////////////////
 //Return number of elements in an arary
 
-const arr = [
-  true,
-  true,
-  true,
-  true,
-  false,
-  false,
-  false,
-  false,
-  false,
-  false,
-  false,
-  false,
-  false,
-];
+// const arr = [
+//   true,
+//   true,
+//   true,
+//   true,
+//   false,
+//   false,
+//   false,
+//   false,
+//   false,
+//   false,
+//   false,
+//   false,
+//   false,
+// ];
 
-var numOfTrues = 0;
-var numOfFalse = 0;
+// var numOfTrues = 0;
+// var numOfFalse = 0;
 
-arr.map((el) => {
-  el === true && numOfTrues++;
-  el === false && numOfFalse++;
-});
+// arr.map((el) => {
+//   el === true && numOfTrues++;
+//   el === false && numOfFalse++;
+// });
 // console.log(numOfFalse);
 
 //JS Methods
 
-const array = arr.reduce((prev, current) => {
-  prev[current] = (prev[current] || 0) + 1;
-  return prev;
-}, {});
-console.log(array);
+// const array = arr.reduce((prev, current) => {
+//   prev[current] = (prev[current] || 0) + 1;
+//   return prev;
+// }, {});
+// console.log(array);
+
+/////////////////////////////////////////////////////////////////////////////////
+
+// const foo = () => {
+//   let fuck = {};
+//   return () => {
+//     return fuck;
+//   };
+// };
+// const fuck2 = foo();
+// console.log(typeof fuck2());
