@@ -73,4 +73,27 @@
 //   };
 // };
 // const fuck2 = foo();
-// console.log(typeof fuck2());
+// console.log(fuck2);
+
+// var catName = (name) => {
+//   console.log("My cat's name is " + name);
+// };
+// catName("Tiger");
+
+const foo = () => {
+  let name = "rohaol";
+  return {
+    getName: function () {
+      return name;
+    },
+    setName: function (names) {
+      return (name = names);
+    },
+  };
+};
+
+const instance = foo();
+
+console.log(instance.getName());
+console.log(instance.setName("balli"));
+console.log(instance.getName());
