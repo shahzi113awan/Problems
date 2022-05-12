@@ -81,19 +81,20 @@
 // catName("Tiger");
 
 const foo = () => {
-  let name = "rohaol";
+  let name = "Nabeel";
   return {
     getName: function () {
       return name;
     },
     setName: function (names) {
-      return (name = names);
+      name = names
+       
     },
   };
 };
-
+ 
 const instance = foo();
 
 console.log(instance.getName());
-console.log(instance.setName("balli"));
+ instance.setName("balli");
 console.log(instance.getName());
